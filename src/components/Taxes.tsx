@@ -99,7 +99,6 @@ export const Taxes: React.FC = () => {
                 </Stack>
                 <Typography variant="h6">Total : {total} €</Typography>
                 <Typography variant="h6">Total après taxes : {totalAfterTaxes} €</Typography>
-                <Button type="submit" sx={{ alignSelf: "end" }} variant="contained">Sauvegarder</Button>
             </Stack>
         </Stack >
     );
