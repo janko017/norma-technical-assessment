@@ -40,6 +40,9 @@ The calculation are the following :
 
 The calculation should be fairly similar to what we have for the monthly salary.
 
+You're free to add any fields you think are necessary to make the calculation work. You can also change the existing code if you think it's necessary.
+You can also add any tests if you need them (it's not mandatory at all)
+
 ### How much time do you have ?
 We expect you to finish the test within a day or 2 (should be much shorter in practice but this is just to give you some margin). If you don't have time to finish it, don't worry, just tell us and we can give you more time.
 
