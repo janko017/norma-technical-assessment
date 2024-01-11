@@ -3,7 +3,6 @@ import { AppBar, Button, IconButton, InputAdornment, Table, TableBody, TableCell
 import { Stack } from "@mui/system";
 import { useFieldArray, useForm, useWatch } from "react-hook-form";
 import * as FormTypes from "../types/formTypes";
-import * as FormHelpers from "../helpers/formHelpers";
 import { TextFieldElement } from 'react-hook-form-mui'
 import { Delete } from "@mui/icons-material";
 import * as Calculations from "../helpers/calculations";
@@ -52,7 +51,9 @@ export const Taxes: React.FC = () => {
                 </Toolbar>
             </AppBar>
             <Toolbar />
-            <Stack component="form" onSubmit={handleSubmit(FormHelpers.handleSuccessfulSubmit, () => {
+            <Stack component="form" onSubmit={handleSubmit(() => {
+                console.log("success");
+            }, () => {
                 console.log("error");
             })}
                 marginTop={2}
