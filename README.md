@@ -42,6 +42,8 @@ The calculation should be fairly similar to what we have for the monthly salary.
 
 You're free to add any fields you think are necessary to make the calculation work. You can also change the existing code if you think it's necessary.
 You can also add any tests if you need them (it's not mandatory at all)
+### Example of result
+<img width="1076" alt="Screenshot 2024-01-11 at 22 32 10" src="https://github.com/jeremynac/norma-technical-assessment/assets/63456504/df754b10-a583-4f8a-84a8-65ec0f2e654c">
 
 ### How much time do you have ?
 We expect you to finish the test within a day or 2 (should be much shorter in practice but this is just to give you some margin). If you don't have time to finish it, don't worry, just tell us and we can give you more time.
