@@ -7,6 +7,7 @@ This is a technical assessment for Norma.
 It is a simple web application that allows users to calculate their total revenue based on their monthly salary. It also displays the revenue after taxes.
 You don't need to bother about the right tax rate etc, this is just a fictional example.
 There is a simple form where the user can enter their monthly salary and the total revenue is displayed on the page.
+The user add multiple rows, each row contains a year and a monthly salary. The total revenue is calculated based on the sum of all the monthly salaries annualized. 
 There's no backend, the calculation is done on the frontend.
 
 ### Installation
@@ -19,18 +20,25 @@ There's no backend, the calculation is done on the frontend.
 
 ## Your task
 
-We want to add a new feature : to allow user to also add their revenue as a freelancer. A freelancer, unlike a regular employee, earns a hourly rate. The user will be able to add multiple rows, each row can be either a monthly salary or a freelancer revenue. The total revenue will be calculated based on the sum of all the rows.
+We want to add a new feature : to allow user to also add their revenue as a freelancer. A freelancer, unlike a regular employee, earns a hourly rate. The user will be able to add multiple rows, each row corresponds to a year and can be either a monthly salary or a freelancer revenue. The total revenue will be calculated based on the sum of all the rows.
 The fields that should be present for a freelancer row are :
 - hourly rate : the amount of money the freelancer earns per hour
 - year : Same as for the monthly salary.
 - number of hours worked per day : the number of hours the freelancer works per day. Make sure it corresponds to a possible value for hours in a day.
 - number of days worked per year : the number of days the freelancer works per year. Make sure it corresponds to a possible value for days in a year.
 
-Also, you will have to update the calculation of the total revenue to take into account the new rows.
+And to calculate the totals, you will need to calculate (but not display) the revenues per year for each row. The calculation should be the following :
+- Yearly revenue of a freelancer : hourly rate * number of hours worked per day * number of days worked per year
+- Yearly revenue of a freelancer after taxes = Total revenue of a freelancer * Freelancer tax rate (it is provided in the constants in the code)
+- 
+The calculation should be fairly similar to what we have for the monthly salary.
 
+Also, you will have to update the calculation of the total revenue to take into account the new rows.
 The calculation are the following :
-- Total revenue of a freelancer = hourly rate * number of hours worked per day * number of days worked per year
-- Total revenue of a freelancer after taxes = Total revenue of a freelancer * Freelancer tax rate (it is provided in the constants in the code)
+- Total revenue = Sum of all the yearly revenues rows of both the monthly salaries and the freelancers
+- Total revenue after taxes = Sum of all the yearly revenues after taxes rows of both the monthly salaries and the freelancers
+
+The calculation should be fairly similar to what we have for the monthly salary.
 
 ### How much time do you have ?
 We expect you to finish the test within a day or 2 (should be much shorter in practice but this is just to give you some margin). If you don't have time to finish it, don't worry, just tell us and we can give you more time.
