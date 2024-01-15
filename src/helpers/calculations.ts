@@ -13,6 +13,6 @@ export function getPermanentTaxesAnnualizedTotal(rows: Taxes["rows"]): number {
 export function getPermanentTaxesAnnualizedTotalAfterTaxes(rows: Taxes["rows"]): number {
     return sum(rows.map((row) => {
         const annualizedMonthlySalary = getAnnualizedMonthlySalary(row.monthlySalary);
-        return annualizedMonthlySalary * PermanentTaxRate;
+        return annualizedMonthlySalary * (1 - PermanentTaxRate);
     }));
 }
