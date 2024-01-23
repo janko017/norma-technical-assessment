@@ -1,6 +1,6 @@
 import { FreelanceTaxRate, PermanentTaxRate } from "../constants/taxRates";
 import { Taxes } from "../types/formTypes";
-import { multiply, sum } from 'lodash';
+import { sum } from 'lodash';
 
 export function getAnnualizedMonthlySalary(amount: number): number {
     return amount * 12;
